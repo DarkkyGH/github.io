@@ -154,112 +154,15 @@
   <div class="background" style="background-image:url(assets/img/background/img25.jpg)"></div>
 <style>
 
-.bg-music{
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	position: absolute;
+    <link rel="stylesheet" type="text/css" href="style.css">
 
-	top: 64%;
+    <title>Background Audio in Webpage - Pure Coding</title>
 
-	left: 0;
-
-	right: o;
-
-	margin: 0 auto;
-
-}
-
-.butn{
-
-	background-color: transparent;
-
-	color: #fff;
-
-	font-size: 78px;
-
-	border: none;
-
-	display: block;
-
-	margin: 0 auto;
-
-	opacity: .3;
-
-	transition: all linear .2s;
-
-}
-
-.butn:hover{
-
-	opacity: 1;
-
-}
-
-.fa-pause-circle-o{
-
-	display: none;
-
-}
-
-
-
-
-
-</style>
-
- <script type="text/javascript">
-
-  $ (document).ready(function(){
-
-
-
-   $(".btn .fa-play-circle-o").on('click',function(){
-
-    $(this).hide();
-
-    $(".fa-pause-circle-o").fadeIn();
-
-      $("#mymusic")[0].play();
-
-   });
-
-
-
-   $(".butn .fa-pause-circle-o").on('click',function(){
-
-    $(this).hide();
-
-    $(".fa-play-circle-o").fadeIn();
-
-      $("#mymusic")[0].pause();
-
-   });
-
-
-
- });
-
- </script>
-
-
-
-<div class="bg-music">
-
-<audio id="mymusic" src="songjakzmrd.mp3" loop="">
-
-
-
-</audio>
-
-<button class="butn">
-
-<i class="fa fa-play-circle-o"></i>
-
-<i class="fa fa-pause-circle-o"></i>
-
-</button>
-
-
-
-</div>
+    <audio>
+        <source src="songjakzmrd.mp3" type="audio/mpeg">
+    </audio>	
 </body>
 </html>
