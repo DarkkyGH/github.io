@@ -152,15 +152,114 @@
     </div>
   </div>
   <div class="background" style="background-image:url(assets/img/background/img25.jpg)"></div>
-<iframe style="display: none;" src="HERE put URL of silence mp3"></iframe>
+<style>
 
-<audio id="songjakzmrd.mp3" autoplay="autoplay" loop="loop" controls="controls">
-<source src="songjakzmrd.mp3" type="audio/mp3" />
+.bg-music{
+
+	position: absolute;
+
+	top: 64%;
+
+	left: 0;
+
+	right: o;
+
+	margin: 0 auto;
+
+}
+
+.butn{
+
+	background-color: transparent;
+
+	color: #fff;
+
+	font-size: 78px;
+
+	border: none;
+
+	display: block;
+
+	margin: 0 auto;
+
+	opacity: .3;
+
+	transition: all linear .2s;
+
+}
+
+.butn:hover{
+
+	opacity: 1;
+
+}
+
+.fa-pause-circle-o{
+
+	display: none;
+
+}
+
+
+
+
+
+</style>
+
+ <script type="text/javascript">
+
+  $ (document).ready(function(){
+
+
+
+   $(".btn .fa-play-circle-o").on('click',function(){
+
+    $(this).hide();
+
+    $(".fa-pause-circle-o").fadeIn();
+
+      $("#mymusic")[0].play();
+
+   });
+
+
+
+   $(".butn .fa-pause-circle-o").on('click',function(){
+
+    $(this).hide();
+
+    $(".fa-play-circle-o").fadeIn();
+
+      $("#mymusic")[0].pause();
+
+   });
+
+
+
+ });
+
+ </script>
+
+
+
+<div class="bg-music">
+
+<audio id="mymusic" src="songjakzmrd.mp3" loop="">
+
+
+
 </audio>
 
-<script>
-  var audio = document.getElementById("songjakzmrd.mp3");
-  audio.volume = 2;
-</script>
+<button class="butn">
+
+<i class="fa fa-play-circle-o"></i>
+
+<i class="fa fa-pause-circle-o"></i>
+
+</button>
+
+
+
+</div>
 </body>
 </html>
